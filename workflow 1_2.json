@@ -1,0 +1,384 @@
+{
+  "name": "workflow 1/2",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Pathfinder: AI Career Guidance",
+        "formDescription": "Pathfinder uses AI to connect your strengths, interests, and goals with career paths that truly fit — helping you take confident steps toward a fulfilling future!",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Full Name",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Age",
+              "fieldType": "number",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Email Address",
+              "fieldType": "email",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Field of Study",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Science"
+                  },
+                  {
+                    "option": "Commerce"
+                  },
+                  {
+                    "option": "Arts / Humanities"
+                  },
+                  {
+                    "option": "Other"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Favorite Subjects",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Mathematics"
+                  },
+                  {
+                    "option": "Biology"
+                  },
+                  {
+                    "option": "Physics"
+                  },
+                  {
+                    "option": "History"
+                  },
+                  {
+                    "option": "Literature"
+                  },
+                  {
+                    "option": "Psychology"
+                  },
+                  {
+                    "option": "Computer Science"
+                  },
+                  {
+                    "option": "Economics"
+                  },
+                  {
+                    "option": "Design / Creativity"
+                  }
+                ]
+              },
+              "multiselect": true,
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Soft Skills",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Communication"
+                  },
+                  {
+                    "option": "Teamwork"
+                  },
+                  {
+                    "option": "Critical Thinking"
+                  },
+                  {
+                    "option": "Leadership"
+                  },
+                  {
+                    "option": "Adaptability"
+                  },
+                  {
+                    "option": "Time Management"
+                  }
+                ]
+              },
+              "multiselect": true,
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Topics You Enjoy Learning About",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "AI / Tech"
+                  },
+                  {
+                    "option": "Social Sciences"
+                  },
+                  {
+                    "option": "Business / Entrepreneurship"
+                  },
+                  {
+                    "option": "Arts / Music / Design"
+                  },
+                  {
+                    "option": "Healthcare / Biology"
+                  },
+                  {
+                    "option": "Travel & Culture"
+                  },
+                  {
+                    "option": "Education / Teaching"
+                  }
+                ]
+              },
+              "multiselect": true,
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Preferred Work Style",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Independent"
+                  },
+                  {
+                    "option": "Collaborative"
+                  },
+                  {
+                    "option": "Hybrid / Flexible"
+                  },
+                  {
+                    "option": "Leadership Oriented"
+                  }
+                ]
+              },
+              "multiselect": true
+            },
+            {
+              "fieldLabel": "Personality Type",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Introvert"
+                  },
+                  {
+                    "option": "Extrovert"
+                  },
+                  {
+                    "option": "Ambivert"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "What Motivates You?",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Making a positive impact"
+                  },
+                  {
+                    "option": "Innovation & creativity"
+                  },
+                  {
+                    "option": "Financial growth"
+                  },
+                  {
+                    "option": "Continuous learning"
+                  },
+                  {
+                    "option": "Job security"
+                  },
+                  {
+                    "option": "Status & recognition"
+                  }
+                ]
+              },
+              "multiselect": true
+            }
+          ]
+        },
+        "options": {
+          "customCss": ":root {\n\t--font-family: 'Open Sans', sans-serif;\n\t--font-weight-normal: 400;\n\t--font-weight-bold: 600;\n\t--font-size-body: 12px;\n\t--font-size-label: 14px;\n\t--font-size-test-notice: 12px;\n\t--font-size-input: 14px;\n\t--font-size-header: 20px;\n\t--font-size-paragraph: 14px;\n\t--font-size-link: 12px;\n\t--font-size-error: 12px;\n\t--font-size-html-h1: 28px;\n\t--font-size-html-h2: 20px;\n\t--font-size-html-h3: 16px;\n\t--font-size-html-h4: 14px;\n\t--font-size-html-h5: 12px;\n\t--font-size-html-h6: 10px;\n\t--font-size-subheader: 14px;\n\n\t/* Colors */\n\t--color-background: #fbfcfe;\n\t--color-test-notice-text: #e6a23d;\n\t--color-test-notice-bg: #fefaf6;\n\t--color-test-notice-border: #f6dcb7;\n\t--color-card-bg: #ffffff;\n\t--color-card-border: #dbdfe7;\n\t--color-card-shadow: rgba(99, 77, 255, 0.06);\n\t--color-link: #7e8186;\n\t--color-header: #525356;\n\t--color-label: #555555;\n\t--color-input-border: #dbdfe7;\n\t--color-input-text: #71747A;\n\t--color-focus-border: rgb(90, 76, 194);\n\t--color-submit-btn-bg: #ff6d5a;\n\t--color-submit-btn-text: #ffffff;\n\t--color-error: #ea1f30;\n\t--color-required: #ff6d5a;\n\t--color-clear-button-bg: #7e8186;\n\t--color-html-text: #555;\n\t--color-html-link: #ff6d5a;\n\t--color-header-subtext: #7e8186;\n\n\t/* Border Radii */\n\t--border-radius-card: 8px;\n\t--border-radius-input: 6px;\n\t--border-radius-clear-btn: 50%;\n\t--card-border-radius: 8px;\n\n\t/* Spacing */\n\t--padding-container-top: 24px;\n\t--padding-card: 24px;\n\t--padding-test-notice-vertical: 12px;\n\t--padding-test-notice-horizontal: 24px;\n\t--margin-bottom-card: 16px;\n\t--padding-form-input: 12px;\n\t--card-padding: 24px;\n\t--card-margin-bottom: 16px;\n\n\t/* Dimensions */\n\t--container-width: 448px;\n\t--submit-btn-height: 48px;\n\t--checkbox-size: 18px;\n\n\t/* Others */\n\t--box-shadow-card: 0px 4px 16px 0px var(--color-card-shadow);\n\t--opacity-placeholder: 0.5;\n}"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d48cbee8-cf92-44a1-a08c-16b99fd25768",
+      "name": "On form submission",
+      "webhookId": "7a46a555-7f01-4a28-8249-1ef956d0dff6"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Suggest top 5 career choices for field of study {{ $json['Field of Study'] }} favorite subjects {{ $json['Favorite Subjects'] }} soft skills {{ $json['Soft Skills'] }} topics of interest {{ $json['Topics You Enjoy Learning About'] }} preferred work style {{ $json['Preferred Work Style'] }} personality type {{ $json['Personality Type'] }} motivation {{ $json['What Motivates You?'] }} also suggest courses and mentors. present in a clear and concise format (pointers) with less description",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "0fc06e09-707e-4d0a-b569-3f6554dd852a",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o-mini",
+          "mode": "list",
+          "cachedResultName": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        80,
+        208
+      ],
+      "id": "d0de1dc8-2a19-4bbf-929a-f2fe1d23de1e",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "H94JHkQqdtVrOQ4T",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1ZrrQyklFF0RecqJFVVw9vEmVuiJdZRrNZGm1WhVa2DI",
+          "mode": "list",
+          "cachedResultName": "career-guidance",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1ZrrQyklFF0RecqJFVVw9vEmVuiJdZRrNZGm1WhVa2DI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1ZrrQyklFF0RecqJFVVw9vEmVuiJdZRrNZGm1WhVa2DI/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Name": "={{ $('On form submission').item.json['Full Name'] }}",
+            "Email": "={{ $('On form submission').item.json['Email Address'] }}",
+            "Suggested career choices": "={{ $json.output }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Suggested career choices",
+              "displayName": "Suggested career choices",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        576,
+        0
+      ],
+      "id": "8e4222b2-39dc-4fed-9972-3b259a7211a7",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "OC0vFLoL4CaMMiTw",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "45f97a65-f492-4c98-95c5-bce8c71f8c5c",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f1b25f0b5feae0d2dbed19187e3d0da3e433f5982bf1921f978007abee21b45d"
+  },
+  "id": "SyH13B2Cr0wZxrQV",
+  "tags": []
+}
